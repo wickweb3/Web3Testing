@@ -42,7 +42,12 @@
         console.log("logged out");
       }
 
-      
+      async function newGroupChat(){
+        let chatTitle = document.getElementById("group-name-text").value;
+        const Chats = Moralis.Object.extend("Chats");
+        const chat = new Chats();
+        chat.set("title", chatTitle);
+        chat.save();
 
         console.log("created chat with title " + chatTitle);
       }

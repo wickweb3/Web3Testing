@@ -37,6 +37,8 @@
 			m.set("text",message)
 			m.set("group",chatId)
 			
+			m.save()
+			
 			console.log("Sending " + message + " from " + user.get("ethAddress") + " in group " + chatId));
 		}
 

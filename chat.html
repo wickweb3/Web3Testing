@@ -28,10 +28,10 @@
 	async function sendMessage() {
 		let user = Moralis.User.current();
 		let message = document.getElementById("chatInput").value;
-        	const Message = Moralis.Object.extend("Message");
-        	const message = new Message();
-		//message.set("sender")
 		if(message && message.length>0){
+			const Message = Moralis.Object.extend("Message");
+			const message = new Message();
+			//message.set("sender")
 			console.log("Sending " + message + "from " + user.get("ethAddress"));
 		}
 

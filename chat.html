@@ -22,6 +22,18 @@
 	const params = new URLSearchParams(queryString);
 	const chatId = params.get('id');
 	console.log(chatId);
+	    
+ 
+
+	async function sendMessage() {
+		let message = document.getElementById("sendButton").value;
+		console.log("Sending message" + message);
+
+	}
+	    
+	    
+	document.getElementById("sendbutton").onclick = sendMessage;
+	
     </script>   
 
   </body>

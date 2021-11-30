@@ -31,8 +31,8 @@
 
     <script>
       // connect to Moralis server
-      Moralis.initialize("APP ID");
-      Moralis.serverURL = "SERVER URL";
+      Moralis.initialize("omUlA51Zk21hEKkruoLMg30t9u7Pe0l8isxwB8zG");
+      Moralis.serverURL = "https://jogdgvhgjofg.usemoralis.com:2053/server";
 
       // add from here down
       async function login() {
@@ -47,6 +47,8 @@
         await Moralis.User.logOut();
         console.log("logged out");
       }
+	    
+	
 
       async function newGroupChat(){
         let chatTitle = document.getElementById("group-name-text").value;
